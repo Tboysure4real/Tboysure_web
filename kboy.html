@@ -1,0 +1,63 @@
+<html>
+<head>Kboysure</head>
+<body>
+<div>
+</div>
+<div class="Business">
+	    <div class="slider2">
+	    <h2>CCTV INSTALLATION</h2>
+	      <img src="C:\Users\Tboysure\Desktop\Mr T\Images\CCTV.jpg" id="slideImg2"height="400px" width="400px" alt="CCTV">
+	       <a href="#"><button class="apply">Apply Here</button>
+	    </div>
+	   </div>
+
+ <div class="journalist">
+	      <div class="slider3">
+	     <h3>PROGRRAMMING TUTORIAL</h3>
+	      <img src="Images\pics9.jpg"id="Img3" height="200px" width="400px" alt="journalist" />
+		   <a href="#"><button class="apply">Apply Here</button>
+		   </div>
+	   </div>
+	   
+	     <script> 
+  var slideImg2 = document.getElementById("slideImg2");
+  var Images = new Array(
+    "Images/CCTV.jpg",
+	"Images/CCTV2.jpg",
+	"Images/CCTV3.jpg",
+	"Images/CCTV7.jpg",
+	"Images/CCTV5.jpg",
+	"Images/CCTV1.jpg",
+	"Images/CCTV11.jpg",
+	"Images/CCTV2.jpg"
+  );
+  var len = Images.length;
+  var i = 0;
+  function slider2(){
+    if(i > len-1){
+	  i = 0;
+	 }
+	 slideImg2.src=Images[i];
+	 i++;
+	 setTimeout('slider2()' ,2000); 
+  }
+  slider2();
+</script>
+	     <script> 
+  var slideImg3=["Images/pics9.jpg","Images/prog.png","Images/code.jpg","Images/trd.png"];
+  var i = 0;
+  var duration=3000; 
+  
+  function slider3(){
+  document.getElementById("Img3").src=slideImg3[i];
+   i++;  
+    
+    if(i==slideImg3.length){
+	  i = 0;
+	 }
+	 setTimeout('slider3()' ,duration); 
+  }
+  slider3();
+</script>
+</body>
+</htmml>
