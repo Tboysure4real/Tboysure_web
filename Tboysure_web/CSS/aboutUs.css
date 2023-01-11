@@ -1,0 +1,67 @@
+body{
+background:#fff;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background:url(..//Images/bg/nature1.jpg) no-repeat;
+background-size:cover;
+position:center;
+}
+.box{
+	width: 420px;
+	height: 420px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+}
+.box:hover
+.box-content{
+	transform: rotateY(180deg);
+}
+.box-content{
+	width:420px;
+	height:420px;
+	transform-style: preserve-3d;
+	 transition: transform 0.5s;
+}
+.box-front,
+.box-back{
+	position:absolute;
+	width:420px;
+	height:420px;
+	padding:30px;
+	color:#ddd; 
+}
+.box-front p{
+	font-size: 80%; 
+	text-align: center;
+}
+.box-front h3{ 
+	text-align: center;
+}
+.box-front{
+	background:#2c3e50;
+}
+.box-front-img{
+ justify-content:center;
+ align-item:center;
+	background-position:center;
+	background-size:cover;
+ 
+}
+.box-back{
+	background: #303030;
+	transform: rotateY(180deg);
+}
+.box-back a{
+	margin-top:0;
+	display: inline-block;
+	list-style-type: none;
+	background-color:transparent;
+	color:blue;
+	font-weight: bold;
+	font-size:1.2rem;
+float:right;
+}
+.box-back a:hover{
+	color:red;
+}
