@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Progress</title>
+</head>
+<body>
+    <h2>aJAX pROGRESS</h2>
+   <button type="button" id="btn">Click me</button> 
+   <div id="show"></div>
+
+   <script>
+    document.getElementById("btn").addEventListener('click', action);
+      function action(){
+         var xhr = new XMLHttpRequest();
+         xhr.open('GET','now.json',true);
+         xhr.onload = function(){
+         // console.log(this.responseText);
+         if(this.status==200){
+            var now = JSON.parse(this.responseText);
+             for(var i in now){
+                var output ='';
+                output +='<ul>'+
+                '<li>Name :'+now[i].name+'</ul>'+
+                '<li>Profession :'+now[i].profession+'</ul>'+
+                '<li>Fav Food :'+now[i].favFood+'</li>'+
+                '</ul>';   
+               
+                 document.getElementById('show').innerHTML = output;
+             }
+          }
+         }
+         xhr.send();
+      }
+   </script>
+</body>
+</html>

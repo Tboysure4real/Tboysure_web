@@ -1,0 +1,30 @@
+.gss{
+	/*background:transparent url('..//upload/Hafiz Super Store.png')  no-repeat ;
+	 background-size:100% 100%;*/
+	 color: #2069b4;
+	 text-shadow: #88162e;
+	 margin-top: 30px;
+     font-size: large;
+     	 text-align:center;
+}
+.graph-table{
+	width:60%;
+	margin:5px;
+	margin-left: 250px;
+	font-weight: bold;
+	color: #2069b4 bold;
+	text-emphasis: 46;
+	-ms-text-size-adjust: auto;
+}
+.critical-limit{
+	width:80%;
+	margin:5px;
+
+	margin-left: 120px;
+}
+.date{
+	margin-left:50px;
+	color: #2069b4;
+	margin-top: 20px;
+	margin-bottom: -20px;
+}

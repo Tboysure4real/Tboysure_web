@@ -1,0 +1,22 @@
+CREATE TABLE `gd_graph` (
+  `month` char(3) NOT NULL default '',
+  `sales` int(3) NOT NULL default '0'
+) ENGINE=InnoDB ;
+
+
+-- 
+-- Dumping data for table `gd_graph`
+-- 
+
+INSERT INTO `gd_graph` VALUES ('Jan', 120);
+INSERT INTO `gd_graph` VALUES ('Feb', 130);
+INSERT INTO `gd_graph` VALUES ('Mar', 140);
+INSERT INTO `gd_graph` VALUES ('Apr', 110);
+INSERT INTO `gd_graph` VALUES ('May', 100);
+INSERT INTO `gd_graph` VALUES ('Jun', 115);
+INSERT INTO `gd_graph` VALUES ('Jul', 125);
+INSERT INTO `gd_graph` VALUES ('Aug', 120);
+INSERT INTO `gd_graph` VALUES ('Sep', 150);
+INSERT INTO `gd_graph` VALUES ('Oct', 140);
+INSERT INTO `gd_graph` VALUES ('Nov', 145);
+INSERT INTO `gd_graph` VALUES ('Dec', 150);

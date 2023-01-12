@@ -1,0 +1,41 @@
+{
+  "name": "saschaende/mpdf",
+  "description": "mPDF is a PHP library which generates PDF files from UTF-8 encoded HTML. It is based on FPDF and HTML2FPDF with a number of enhancements. More: https://mpdf.github.io/",
+  "keywords": [
+    "typo3",
+    "helpers",
+    "extbase",
+    "functions",
+    "classes",
+    "framework",
+    "tools",
+    "pdf",
+    "mpdf",
+    "generator"
+  ],
+  "homepage": "https://extensions.typo3.org/extension/mpdf/",
+  "type": "typo3-cms-extension",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-core": ">=8.7.0 <10.9.0",
+    "php": ">=7.4"
+  },
+  "authors": [
+    {
+      "name": "Filmmusic.io",
+      "email": "info@filmmusic.io",
+      "homepage": "https://filmmusic.io"
+    }
+  ],
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web",
+      "extension-key": "mpdf"
+    }
+  }
+}
